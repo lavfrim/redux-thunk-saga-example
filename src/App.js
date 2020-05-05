@@ -1,25 +1,38 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { useSelector } from 'react-redux';
+
+import PostForm from './components/PostForm';
+import Posts from './components/Posts';
+import FetchedPosts from './components/FetchedPosts';
 
 function App() {
+  const alert = useSelector(state => state.app.alert);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="container mt-3">
+        <div className="row">
+          <div className="col-md-12">
+            <PostForm />
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-md-6">
+            <Posts />
+          </div>
+          <div className="col-md-6">
+            <FetchedPosts />
+          </div>
+        </div>
+      </div>
+      {alert &&
+      <div
+        className="fixed-bottom alert alert-primary text-center"
+        role="alert"
+      >
+        {alert}
+      </div>}
+    </>
   );
 }
 
