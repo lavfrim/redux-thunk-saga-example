@@ -1,3 +1,3 @@
 ### react
-### redux, react-redux, redux-thunk, redux-saga, combaine-reduceer, redux-devtools
+### redux, react-redux, redux-thunk, redux-saga, combaine-reducer, redux-devtools
 ### custom middleware
