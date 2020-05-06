@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 
 import { createPost, showAlert, hideAlert } from '../../redux/actions';
 import { NON_EMPTY_TITLE } from '../../constants/alert-message';
-import { FORBIDDEN_COUNT_CHARECTER } from '../../constants/post-form';
+import { FORBIDDEN_COUNT_CHARACTER } from '../../constants/post-form';
 
 
 class PostForm extends React.PureComponent {
@@ -21,7 +21,7 @@ class PostForm extends React.PureComponent {
         const { createPost, showAlert } = this.props;
 
         submitEvent.preventDefault();
-        if (title.length > FORBIDDEN_COUNT_CHARECTER) {
+        if (title.length > FORBIDDEN_COUNT_CHARACTER) {
             createPost({
                 id: Date.now(),
                 title,
@@ -48,7 +48,7 @@ class PostForm extends React.PureComponent {
             [name]: value,
         });
 
-        if (isShowAlert && (name === 'title' && value.length > FORBIDDEN_COUNT_CHARECTER)) {
+        if (isShowAlert && (name === 'title' && value.length > FORBIDDEN_COUNT_CHARACTER)) {
             hideAlert();
 
             this.setState({
