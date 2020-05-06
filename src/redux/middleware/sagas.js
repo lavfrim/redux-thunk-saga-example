@@ -25,6 +25,8 @@ export function * sagaWorker() {
         yield put(hideAlert());
         yield put(showLoader());
         const payload = yield call(fetchPost);
+        // syntactic slow network
+        yield new Promise(res => setTimeout(() => res(), 2000));
         yield put(setPosts(payload));
         yield put(hideLoader());
     } catch (error) {
