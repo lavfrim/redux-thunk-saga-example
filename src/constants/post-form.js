@@ -1,0 +1,1 @@
+export const FORBIDDEN_COUNT_CHARACTER = 1;

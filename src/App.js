@@ -1,13 +1,11 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
 
 import PostForm from './components/PostForm';
 import Posts from './components/Posts';
 import FetchedPosts from './components/FetchedPosts';
+import Alert from './components/Alert';
 
 function App() {
-  const alert = useSelector(state => state.app.alert);
-
   return (
     <>
       <div className="container mt-3">
@@ -25,13 +23,7 @@ function App() {
           </div>
         </div>
       </div>
-      {alert &&
-      <div
-        className="fixed-bottom alert alert-primary text-center"
-        role="alert"
-      >
-        {alert}
-      </div>}
+      <Alert />
     </>
   );
 }
