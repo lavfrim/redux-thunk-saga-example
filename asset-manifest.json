@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/redux-thunk-saga-example/static/js/main.b60fbb69.chunk.js",
-    "main.js.map": "/redux-thunk-saga-example/static/js/main.b60fbb69.chunk.js.map",
+    "main.js": "/redux-thunk-saga-example/static/js/main.d23b6755.chunk.js",
+    "main.js.map": "/redux-thunk-saga-example/static/js/main.d23b6755.chunk.js.map",
     "runtime-main.js": "/redux-thunk-saga-example/static/js/runtime-main.416b8bbe.js",
     "runtime-main.js.map": "/redux-thunk-saga-example/static/js/runtime-main.416b8bbe.js.map",
     "static/js/2.d093ba67.chunk.js": "/redux-thunk-saga-example/static/js/2.d093ba67.chunk.js",
     "static/js/2.d093ba67.chunk.js.map": "/redux-thunk-saga-example/static/js/2.d093ba67.chunk.js.map",
     "index.html": "/redux-thunk-saga-example/index.html",
-    "precache-manifest.2421c0e0c8efc8389773da48f711a791.js": "/redux-thunk-saga-example/precache-manifest.2421c0e0c8efc8389773da48f711a791.js",
+    "precache-manifest.e5b4f6d7607bbd1dd1bb624f1cf8eb1d.js": "/redux-thunk-saga-example/precache-manifest.e5b4f6d7607bbd1dd1bb624f1cf8eb1d.js",
     "service-worker.js": "/redux-thunk-saga-example/service-worker.js",
     "static/js/2.d093ba67.chunk.js.LICENSE.txt": "/redux-thunk-saga-example/static/js/2.d093ba67.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.416b8bbe.js",
     "static/js/2.d093ba67.chunk.js",
-    "static/js/main.b60fbb69.chunk.js"
+    "static/js/main.d23b6755.chunk.js"
   ]
 }
